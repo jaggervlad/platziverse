@@ -1,0 +1,33 @@
+{
+  "name": "platziverse-mqtt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Simple IoT Plataform - MQTT Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "set NODE_ENV=production && nodemon server.js",
+    "start-dev": "set DEBUG=platziverse:* && nodemon server.js",
+    "lint": "standar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaggervlad/platziverse.git"
+  },
+  "author": "Sebastian Acosta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaggervlad/platziverse/issues"
+  },
+  "homepage": "https://github.com/jaggervlad/platziverse#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.3",
+    "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "platziverse-db": "file:../platziverse-db",
+    "mosca": "^2.8.3",
+    "redis": "^2.8.0"
+  }
+}
